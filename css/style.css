@@ -1,0 +1,217 @@
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&family=Roboto&display=swap');
+/* common css start */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,ol,ul,span{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Roboto, sans-serif;
+}
+:root {
+  --primaryfont: "Josefin Sans", sans-serif;
+  --secondaryfont: "Roboto", sans-serif;
+  --text-color: #11161e;
+	--darkcolor: #151a32;
+	--commoncolor: #fff;
+	--primary-color: #ff6f61;
+	--secondary-color: #444;
+	--primary-color2: #ff5645;
+	--background-color: #f1f1f1;
+	--bg-color: #f1f3f4;
+	--blackcolor: #000;
+}
+/* common css ends */
+/* navbar start */
+.logo{
+    width:100px;
+}
+#mymenu .nav-item{
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+text-transform:capitalize;
+position: relative;
+transition:0.5s;
+padding:0 20px;
+}
+#mymenu li:hover > a{
+    color:var(--primary-color2);
+}
+.submenu{
+    position: absolute;
+width:300px;
+border:1px solid #ccc;
+opacity:0;
+visibility: hidden;
+
+}
+#mymenu li:hover .submenu{
+    opacity:1;
+    visibility: visible;
+    transition:0.5s;
+}
+.submenu li{
+    padding:10px;
+    font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+text-transform:capitalize;
+border-bottom:1px solid #ccc;
+}
+.submenu a{
+    color:var(--text-color);
+}
+.nav-item:hover .angledownarrow i{
+    transform:rotate(180deg);
+    transition:0.1s;
+
+}
+.link li{
+    padding-right:15px;
+}
+.link li i{
+    color:var(--blackcolor);
+}
+.link .shoppingbag{
+    position:relative;
+   
+   
+    
+}
+.cartcount{
+    margin-top:-30px;
+    margin-left:10px ;
+    background-color:var(--primary-color2);
+    width:20px;
+    color:white;
+    border-radius:50%;
+    height:20px;
+    position: absolute;
+    text-align: center;
+    display: block;
+}
+/* navbar ends */
+/* smnavbar start */
+.smnavbar{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.logo img{
+    margin-top:5px;
+}
+.sidemenu li{
+    padding:10px 20px;
+    border-bottom:1px solid #ccc;
+    display: block;
+
+}
+.sidemenu li:hover > a{
+    color:var(--primary-color2);
+}
+.sidemenu a{
+    text-transform: capitalize;
+    color:var(--text-color);
+}
+.menubtn{
+    border:0;
+    background-color:white;
+    font-size:18px;
+    cursor: pointer;
+}
+.menubtn i{
+    color:var(--text-color);
+    
+}
+.sidemenu li:nth-child(6){
+    border-bottom:none;
+}
+.dropdown-menu{
+    position: relative !important;
+    inset: 0;
+    margin: 0;
+    transform: translate3d(0px, 0px, 0px) !important ;
+    border-radius: 0;
+    border: none !important;
+    padding-bottom: 0 !important;
+    transition:0.5s;
+}
+.dropdown-menu li{
+    border:1px solid #ddd;
+    
+}
+.dropdownArrow:hover i{
+    transform:rotate(180deg);
+    transition:0.1s;
+}
+/* smnavbar ends */
+/* banner start */
+/* dekstop slider start */
+#banner{
+    position: relative;
+  }
+  #banner .bannerSlider .slide {
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+  }
+  #banner .bannerSlider .slide h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #1d1d1d;
+  }
+  #banner .bannerSlider .slide h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 116%;
+    color: #1d1d1d;
+    margin: 14px 0 16px;
+  }
+  #banner .bannerSlider .slide p {
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #1d1d1d;
+    margin-bottom: 29px;
+  }
+  .bannerDots{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 200px;
+  }
+  .bannerDots li button{
+    width: 11px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: transparent;
+    border: none;
+    margin-right: 5.45px;
+    transition: 0.35s ease;
+  }
+  .bannerDots li.slick-active button{
+    width: 29px;
+    background-color: var(--primaryColor);
+  }
+  
+.button{
+    color:white;
+    background-color:var(--primary-color2);
+    padding:10px 20px;
+}  
+  
+/* dekstop slider ends */
